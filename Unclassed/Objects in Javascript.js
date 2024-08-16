@@ -1,8 +1,25 @@
 /*
-Javascript Documentation
+Lotus Javascript Documentation
 Desc: Objects in Javascript
 All right reserved lotus code studios Apr 2021
 */
+
+
+//empty objects
+let object = {};
+
+//Using Object Literals
+let book = {
+	"name": "javascript",
+	"target" : "All audiences",
+	"pages" : 1098,
+	"author": {
+		"firstname": "David",
+		"lastname": "flanagan"
+	}
+};   
+console.log(book.pages);
+
 
 //Using Object.create()
 let newBook = Object.create(book);

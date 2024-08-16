@@ -7,7 +7,7 @@ function area(width, height){
 	return area; 
 }
 
-//function expressions]
+//function expressions
 let areaE = function(width, height){
 	let area = width * height;
 	return area;

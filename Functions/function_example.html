@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Example in HTML</title>
+</head>
+<body>
+
+   
+    <div>
+         <h1>Our Blog</h1>
+        <p id="message"></p>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    div {
+        width: 40%;
+        height: 200px;
+        margin: auto;
+        padding: 40px;
+        background-color: blanchedalmond;
+        color: darkred;
+        border-radius: 30px;
+        box-sizing: border-box;
+        box-shadow: 1px 3px 5px rgba(139, 0, 0, 0.178);
+        cursor: pointer;
+        transition: all ease 200ms;
+    }
+
+    div:hover {
+        box-shadow: 1px 3px 10px rgba(139, 0, 0, 0.278);
+    }
+</style>
+
+<script>
+    let topic = 
+    `
+        A function declaration creates a function that you can call later in your
+        code. It is the type of function you have seen so far in this book.
+    `
+    let message = `Javascript is a loosely typed, high level, dynamic language\n${topic}`;
+
+    function updateMsg(){
+        let msgElement = document.getElementById("message");
+        msgElement.innerHTML = message;
+    }
+
+    updateMsg();
+</script>
